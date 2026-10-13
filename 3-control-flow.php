@@ -1,4 +1,5 @@
 <?php
+//percabangan
 $nilai = 85;
 
 if($nilai >= 90) {
@@ -10,5 +11,11 @@ if($nilai >= 90) {
 } else {
     echo "Grade D";
 }
+
+// ternary
+echo "<br>";
+$umur = 16;
+$status = $umur >= 17 ? "Bisa bikin SIM" : "Belum bisa bikin SIM";
+echo $status;
 
 ?>
