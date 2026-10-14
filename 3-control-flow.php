@@ -1,4 +1,6 @@
 <?php
+
+date_default_timezone_set('Asia/Jakarta');
 //percabangan
 $nilai = 85;
 
@@ -26,7 +28,8 @@ echo $nama;
 // Switch Case
 
 echo "<br>";
-$hari = date('1');
+$hari = date('i');
+echo $hari;
 switch ($hari) {
     case 'Monday':
         echo "Mulai Kerja!";
@@ -43,6 +46,8 @@ switch ($hari) {
 
 }
 
+
+
 // Perulangan (Loop)
 echo "<br>";
 for ($i = 1; $i <= 5; $i++) {
@@ -50,7 +55,7 @@ for ($i = 1; $i <= 5; $i++) {
 }
 // 1 2 3 4 5
 
-// while
+// while ketika kondisi tertentu // for ketika perulangan udah diketahui
 echo "<br>";
 $i = 1;
 while ($i <= 5) {
@@ -80,10 +85,10 @@ for ($i = 1; $i <= 10; $i++) {
 }
 
 // Kalkulator Sederhana
-echo "<break>";
-$a = 10;
+echo "<br>";
+$a = 15;
 $b = 5;
-$operator = '+';  // Coba ganti: '+', '-', '*', '/', '%'
+$operator = 'x';  // Coba ganti: '+', '-', '*', '/', '%'
  
 switch ($operator) {
     case '+': $hasil = $a + $b; break;
