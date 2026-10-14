@@ -23,4 +23,24 @@ echo "<br>";
 $nama = $_GET['nama'] ?? 'Tamu';
 echo $nama;
 
+// Swirch Case
+
+echo "<br>";
+$hari = date('1');
+switch ($hari) {
+    case 'Monday':
+        echo "Mulai Kerja!";
+        break;
+    case 'Friday':
+        echo "Hari terakhir kerja!";
+        break;
+    case 'Saturday':
+    case 'Sunday':
+        echo "Libur!";
+        break;
+    default:
+        echo "Hari biasa";
+
+}
+
 ?>
