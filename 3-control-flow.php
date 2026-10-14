@@ -58,4 +58,17 @@ while ($i <= 5) {
     $i++;
 }
 
+// froeach
+echo "<br>";
+$buah = ["Apel", "Mangga", "Jeruk"];
+ 
+foreach ($buah as $item) {
+    echo "$item <br>";
+}
+ 
+// Dengan key => value
+$nilai = ["Matematika" => 90, "IPA" => 85];
+foreach ($nilai as $mapel => $skor) {
+    echo "$mapel: $skor <br>";
+}
 ?>
