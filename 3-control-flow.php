@@ -23,7 +23,7 @@ echo "<br>";
 $nama = $_GET['nama'] ?? 'Tamu';
 echo $nama;
 
-// Swirch Case
+// Switch Case
 
 echo "<br>";
 $hari = date('1');
@@ -42,5 +42,12 @@ switch ($hari) {
         echo "Hari biasa";
 
 }
+
+// Perulangan (Loop)
+echo "<br>";
+for ($i = 1; $i <= 5; $i++) {
+    echo "Angka: $i <br>";
+}
+// 1 2 3 4 5
 
 ?>
