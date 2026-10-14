@@ -79,4 +79,21 @@ for ($i = 1; $i <= 10; $i++) {
     echo "$i ";                  // Output: 1 3 5
 }
 
+// Kalkulator Sederhana
+echo "<break>";
+$a = 10;
+$b = 5;
+$operator = '+';  // Coba ganti: '+', '-', '*', '/', '%'
+ 
+switch ($operator) {
+    case '+': $hasil = $a + $b; break;
+    case '-': $hasil = $a - $b; break;
+    case '*': $hasil = $a * $b; break;
+    case '/': $hasil = $a / $b; break;
+    case '%': $hasil = $a % $b; break;
+    default: $hasil = "Operator tidak dikenal";
+}
+ 
+echo "$a $operator $b = $hasil";
+
 ?>
