@@ -71,4 +71,12 @@ $nilai = ["Matematika" => 90, "IPA" => 85];
 foreach ($nilai as $mapel => $skor) {
     echo "$mapel: $skor <br>";
 }
+
+//Break & Continue
+for ($i = 1; $i <= 10; $i++) {
+    if ($i % 2 == 0) continue;  // Skip genap
+    if ($i == 7) break;          // Stop di 7
+    echo "$i ";                  // Output: 1 3 5
+}
+
 ?>
